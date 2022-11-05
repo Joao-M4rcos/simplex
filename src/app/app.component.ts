@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-root',
@@ -8,10 +8,10 @@ import { ToastrService } from 'ngx-toastr';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit {
-  simplexMaxForm: FormGroup;
+  simplexMaxForm: UntypedFormGroup;
 
   constructor(
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private toastr: ToastrService
   ) {}
 
